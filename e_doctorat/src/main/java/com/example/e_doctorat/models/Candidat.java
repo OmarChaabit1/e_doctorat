@@ -74,10 +74,10 @@ public class Candidat {
     @Column(nullable = true)
     private Integer paysId;
 
-    @Column(nullable = false)
-    private Integer userId;
 
     @Column(nullable = true)
     private Boolean fonctionaire;
 
+    @OneToOne
+    private User user_id;
 }
